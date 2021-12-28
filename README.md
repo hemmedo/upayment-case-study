@@ -1,5 +1,7 @@
 # product-category-demo
 
+- Assignment: https://docs.google.com/document/d/1aO7q48-FxylcPOEXPZA-BzgRyAeciPZKu86JUoT6LlI/edit?usp=sharing
+
 - Used mirage.js as the mock-up server 
 - Since I wasn't given any public API or example JSON data, I had to modify and create ones for myself with some improvements over the ones on the document
 - Responsiveness of the components to multiple devices is ignored since it wasn't asked for on the document
