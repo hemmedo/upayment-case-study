@@ -1,38 +1,36 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
-import {CustomSpinner} from '../components/CustomSpinner/CustomSpinner';
 import CategoriesScreen from '../screens/Categories/CategoriesScreen';
 import ProductsScreen from '../screens/Products/ProductsScreen';
 import {ScreenParamList} from './screen-types';
 import SplashScreen from '../screens/SplashScreen/SplashScreen';
+import {ScreenNames} from './screen-names';
 
 const Stack = createStackNavigator<ScreenParamList>();
 
 function App() {
-  const fetching = false;
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="SplashScreen">
+      <Stack.Navigator initialRouteName={ScreenNames.SPLASH_SCREEN}>
         <Stack.Screen
-          name="SplashScreen"
+          name={ScreenNames.SPLASH_SCREEN}
           component={SplashScreen}
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name="Categories"
+          name={ScreenNames.CATEGORIES}
           component={CategoriesScreen}
-          options={{headerShown: false, title: 'Categories'}}
+          options={{headerShown: false}}
         />
         <Stack.Screen
-          name="Products"
+          name={ScreenNames.PRODUCTS}
           component={ProductsScreen}
           options={{
             headerShown: true,
           }}
         />
       </Stack.Navigator>
-      <CustomSpinner visible={fetching} />
     </NavigationContainer>
   );
 }

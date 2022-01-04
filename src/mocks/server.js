@@ -1,4 +1,4 @@
-import {Server, Model, Factory} from 'miragejs';
+import {Server} from 'miragejs';
 
 import {
   CategoryDetail,

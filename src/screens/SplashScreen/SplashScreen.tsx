@@ -1,5 +1,6 @@
 import React from 'react';
 import {ImageBackground} from 'react-native';
+import {ScreenNames} from '../../navigation/screen-names';
 import {SplashScreenProps} from '../../navigation/screen-props';
 import styles from './styles';
 
@@ -14,7 +15,7 @@ const SplashScreen = ({navigation}: SplashScreenProps) => {
   }
   async function navigateToCategories() {
     await performTimeConsumingTask();
-    navigation.navigate('Categories');
+    navigation.navigate(ScreenNames.CATEGORIES);
   }
   return (
     <ImageBackground

@@ -26,7 +26,7 @@ export const ProductCategoryContent: React.FC<ProductCategoryContentProps> = ({
           style={[styles.txt, styles.productNameTxt]}
           numberOfLines={2}
           ellipsizeMode="middle">
-          {item.name}{' '}
+          {item.name}
         </Text>
         <Text style={[styles.txt, styles.priceTxt]}>{item.price + ' €'}</Text>
       </View>
