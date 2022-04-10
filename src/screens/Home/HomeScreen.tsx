@@ -60,14 +60,13 @@ const HomeScreen = () => {
   return (
     <>
       <View>
-        {categoriesData && (
-          <CategoryPicker
-            selectedValue={selectedCategory}
-            data={categoriesData && [defaultCategory, ...categoriesData]}
-            onSelectItem={onSelectedCategoryChange}
-          />
-        )}
-        {productsData && <ProductList data={productsData} />}
+        <CategoryPicker
+          selectedValue={selectedCategory}
+          data={categoriesData && [defaultCategory, ...categoriesData]}
+          onSelectItem={onSelectedCategoryChange}
+        />
+
+        <ProductList data={productsData} />
         <CustomSpinner visible={isLoading} />
       </View>
       <AddProductButton

@@ -2,9 +2,6 @@ import { StyleSheet } from 'react-native';
 import { boxShadow } from '../../utils/globalStyles';
 
 const styles = StyleSheet.create({
-  productSelectorContainer: {
-    margin: 10,
-  },
   productSelectorItemContainer: {
     height: 40,
     margin: 10,

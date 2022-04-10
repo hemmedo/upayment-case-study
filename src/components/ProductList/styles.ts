@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: 'center',
   },
-  columnWrapper: { marginBottom: 20, justifyContent: 'space-between' },
+  columnWrapper: { marginVertical: 20, justifyContent: 'space-between' },
 });
 
 export default styles;

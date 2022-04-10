@@ -38,7 +38,6 @@ export const CategoryPicker: React.FC<CategoryPickerProps> = ({
       horizontal={true}
       renderItem={_renderItem}
       keyExtractor={item => item.id}
-      style={styles.productSelectorContainer}
       showsHorizontalScrollIndicator={false}
     />
   );
