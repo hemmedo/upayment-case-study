@@ -1,23 +1,24 @@
-import {RouteProp} from '@react-navigation/native';
-import {StackNavigationProp} from '@react-navigation/stack';
-import {ScreenNames} from './screen-names';
-import {ScreenParamList} from './screen-types';
+import { RouteProp } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { ScreenNames } from './screen-names';
+import { ScreenParamList } from './screen-types';
 
-export type SplashScreenNavigationProp = StackNavigationProp<
+export type HomeScreenNavigationProp = StackNavigationProp<
   ScreenParamList,
-  ScreenNames.SPLASH_SCREEN
->;
-export type ProductsScreenNavigationProp = StackNavigationProp<
-  ScreenParamList,
-  ScreenNames.PRODUCTS
+  ScreenNames.HOME
 >;
 
-export type CategoriesScreenNavigationProp = StackNavigationProp<
+export type ProductDetailScreenNavigationProp = StackNavigationProp<
   ScreenParamList,
-  ScreenNames.CATEGORIES
+  ScreenNames.PRODUCT_DETAIL
 >;
 
-export type ProductsScreenRouteProp = RouteProp<
+export type AddProductScreenNavigationProp = StackNavigationProp<
   ScreenParamList,
-  ScreenNames.PRODUCTS
+  ScreenNames.ADD_PRODUCT
+>;
+
+export type ProductDetailScreenRouteProp = RouteProp<
+  ScreenParamList,
+  ScreenNames.PRODUCT_DETAIL
 >;

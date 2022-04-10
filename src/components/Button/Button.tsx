@@ -1,17 +1,23 @@
 import React from 'react';
-import {Text, Pressable} from 'react-native';
+import { Text } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import { ButtonProps } from '.';
 import styles from './styles';
 
-interface ButtonProps {
-  title?: string;
-  onTap: Function;
-  fontSize?: number;
-}
-
-export const Button: React.FC<ButtonProps> = ({title, onTap, fontSize}) => {
+export const Button: React.FC<ButtonProps> = ({
+  onTap,
+  title,
+  style,
+  titleStyle,
+}) => {
   return (
-    <Pressable style={styles.btnLogin} onPress={() => onTap()}>
-      <Text style={[styles.btnText, {fontSize}]}>{title}</Text>
-    </Pressable>
+    <TouchableOpacity
+      style={style ? [styles.btnContainer, style] : styles.btnContainer}
+      onPress={onTap}
+    >
+      <Text style={titleStyle ? [styles.txt, titleStyle] : styles.txt}>
+        {title}
+      </Text>
+    </TouchableOpacity>
   );
 };

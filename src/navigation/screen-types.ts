@@ -1,7 +1,7 @@
-import {Category} from '../service/models';
+import { Product } from '../service/models';
 
 export type ScreenParamList = {
-  SplashScreen: undefined;
-  Categories: undefined;
-  Products: Category | undefined;
+  HomeScreen: undefined;
+  ProductDetailScreen: Product;
+  AddProductScreen: undefined;
 };

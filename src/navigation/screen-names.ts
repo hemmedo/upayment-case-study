@@ -1,5 +1,5 @@
 export enum ScreenNames {
-  SPLASH_SCREEN = 'SplashScreen',
-  CATEGORIES = 'Categories',
-  PRODUCTS = 'Products',
+  HOME = 'HomeScreen',
+  PRODUCT_DETAIL = 'ProductDetailScreen',
+  ADD_PRODUCT = 'AddProductScreen',
 }

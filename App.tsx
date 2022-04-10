@@ -9,21 +9,14 @@
  */
 import React from 'react';
 import MainNavigation from './src/navigation/main-navigation';
-import {makeServer} from './src/mocks/server';
-import {QueryClient, QueryClientProvider} from 'react-query';
-import {GestureHandlerRootView} from 'react-native-gesture-handler';
-
-if (window.server) {
-  window.server.shutdown();
-} else {
-  window.server = makeServer();
-}
+import { QueryClient, QueryClientProvider } from 'react-query';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 const queryClient = new QueryClient();
 
 const App = () => {
   return (
-    <GestureHandlerRootView style={{flex: 1}}>
+    <GestureHandlerRootView style={{ flex: 1 }}>
       <QueryClientProvider client={queryClient}>
         <MainNavigation />
       </QueryClientProvider>

@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -8,7 +8,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'grey',
     opacity: 0.8,
   },
-  spinnerContainer: {backgroundColor: '#504D4D', borderRadius: 10, padding: 10},
+  spinnerContainer: {
+    backgroundColor: '#504D4D',
+    borderRadius: 10,
+    padding: 10,
+  },
 });
 
 export default styles;

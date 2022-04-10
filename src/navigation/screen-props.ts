@@ -1,16 +1,17 @@
 import {
-  CategoriesScreenNavigationProp,
-  ProductsScreenRouteProp,
-  SplashScreenNavigationProp,
+  ProductDetailScreenRouteProp,
+  HomeScreenNavigationProp,
+  AddProductScreenNavigationProp,
 } from './prop-types';
 
-export type SplashScreenProps = {
-  navigation: SplashScreenNavigationProp;
-};
-export type CategoryScreenProps = {
-  navigation: CategoriesScreenNavigationProp;
+export type HomeScreenProps = {
+  navigation: HomeScreenNavigationProp;
 };
 
-export type ProductsScreenProps = {
-  route: ProductsScreenRouteProp;
+export type ProductDetailScreenProps = {
+  route: ProductDetailScreenRouteProp;
+};
+
+export type AddProductScreenProps = {
+  route: AddProductScreenNavigationProp;
 };

@@ -1,22 +1,22 @@
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
+import { boxShadow } from '../../utils/globalStyles';
 
 const styles = StyleSheet.create({
-  btnLogin: {
-    height: 60,
-    minWidth: 60,
-    backgroundColor: '#f5cf28',
-    marginLeft: 10,
-    marginRight: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginTop: 10,
-    marginBottom: 10,
+  btnContainer: {
+    height: 40,
+    margin: 10,
     borderRadius: 10,
+    backgroundColor: 'black',
+    justifyContent: 'center',
+    ...boxShadow('black', { height: 2, width: 4 }, 8, 0.2),
   },
-  btnText: {
-    fontSize: 20,
-    color: '#050505',
-    fontWeight: 'bold',
+  txt: {
+    fontFamily: 'Avenir-Heavy',
+    alignSelf: 'center',
+    color: 'white',
+    fontSize: 12,
+    fontWeight: '900',
+    paddingHorizontal: 12,
   },
 });
 

@@ -1,23 +1,23 @@
 export interface Category {
-  name: string;
-  imageUrl: string;
-  subCategories: SubCategory[];
-}
-
-export interface SubCategory {
+  createdAt: string;
   name: string;
   id: string;
-  productIds: number[];
 }
-
-export interface Brand {
-  name: string;
-}
-
 export interface Product {
-  id: number;
+  createdAt: string;
   name: string;
-  brand: Brand;
-  imageUrl: string;
+  avatar: string;
+  id: string;
   price: number;
+  category: string;
+  description: string;
+  developerEmail: string;
+}
+export interface ProductRequest {
+  name: string;
+  avatar: string;
+  price: number;
+  category: string;
+  description: string;
+  developerEmail: string;
 }
