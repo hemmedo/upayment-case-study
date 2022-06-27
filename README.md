@@ -1,5 +1,7 @@
 # UPayment-Case-Study
 
+* assignment: https://drive.google.com/file/d/1nbkm5h1AiPMmdv3mPECs0WB8txXDxHaM/view?usp=sharing
+
 * Typescript, React Navigation, Apisauce, React-Query, Image-Pan-Zoom, Linear-Gradient, Fast-Image, Modalize
 
 - Project satisfies all requirements that are asked for in the assignment document.
